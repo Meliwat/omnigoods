@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 64'><defs><linearGradient id='a' x1='0' y1='0' x2='0' y2='1'><stop offset='0%25' stop-color='%23fbe6a8'/><stop offset='50%25' stop-color='%23a87a23'/><stop offset='100%25' stop-color='%237a5414'/></linearGradient></defs><path fill='url(%23a)' fill-rule='evenodd' d='M 6 32 A 24 24 0 1 1 54 32 A 24 24 0 1 1 6 32 Z M 15 32 A 15 15 0 1 0 45 32 A 15 15 0 1 0 15 32 Z M 46 32 A 24 24 0 1 1 94 32 A 24 24 0 1 1 46 32 Z M 55 32 A 15 15 0 1 0 85 32 A 15 15 0 1 0 55 32 Z'/><path fill='url(%23a)' d='M 70 30 h 14 v 4 h -14 z M 80 30 h 4 v 12 h -4 z'/></svg>" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -25,9 +26,35 @@
   <div class="container mast-row">
     <a href="#" class="brand" aria-label="Omni Good Enterprise — home">
       <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 56 32" width="56" height="32" fill="none" stroke="currentColor" stroke-width="1.3">
-          <circle cx="18" cy="16" r="13" />
-          <path d="M51 16 a13 13 0 1 1 -26 0 a13 13 0 1 1 26 0 M38 16 h6 v6" stroke-linecap="round" stroke-linejoin="round" />
+        <svg class="og-logo" viewBox="0 0 100 64" width="74" height="48" role="img" aria-label="OG monogram">
+          <defs>
+            <linearGradient id="ogGoldA" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#fbe6a8" />
+              <stop offset="32%" stop-color="#d9b35b" />
+              <stop offset="58%" stop-color="#8a611a" />
+              <stop offset="80%" stop-color="#e8c878" />
+              <stop offset="100%" stop-color="#7a5414" />
+            </linearGradient>
+            <linearGradient id="ogGoldB" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#fff0bf" />
+              <stop offset="32%" stop-color="#e3c171" />
+              <stop offset="62%" stop-color="#7a5414" />
+              <stop offset="85%" stop-color="#eccd7c" />
+              <stop offset="100%" stop-color="#a87a23" />
+            </linearGradient>
+            <mask id="ogMaskO">
+              <rect width="100" height="64" fill="white" />
+              <circle cx="70" cy="32" r="24" fill="black" />
+              <circle cx="70" cy="32" r="15" fill="white" />
+            </mask>
+          </defs>
+          <g mask="url(#ogMaskO)">
+            <path fill="url(#ogGoldA)" fill-rule="evenodd"
+                  d="M 6 32 A 24 24 0 1 1 54 32 A 24 24 0 1 1 6 32 Z M 15 32 A 15 15 0 1 0 45 32 A 15 15 0 1 0 15 32 Z" />
+          </g>
+          <path fill="url(#ogGoldB)" fill-rule="evenodd"
+                d="M 46 32 A 24 24 0 1 1 94 32 A 24 24 0 1 1 46 32 Z M 55 32 A 15 15 0 1 0 85 32 A 15 15 0 1 0 55 32 Z" />
+          <path fill="url(#ogGoldB)" d="M 70 30 h 14 v 4 h -14 z M 80 30 h 4 v 12 h -4 z" />
         </svg>
       </span>
       <span class="brand-text">
@@ -141,9 +168,35 @@
   <div class="container foot-grid">
     <div class="foot-brand">
       <span class="brand-mark large" aria-hidden="true">
-        <svg viewBox="0 0 56 32" width="84" height="48" fill="none" stroke="currentColor" stroke-width="1.3">
-          <circle cx="18" cy="16" r="13" />
-          <path d="M51 16 a13 13 0 1 1 -26 0 a13 13 0 1 1 26 0 M38 16 h6 v6" stroke-linecap="round" stroke-linejoin="round" />
+        <svg class="og-logo" viewBox="0 0 100 64" width="120" height="76" role="img" aria-label="OG monogram">
+          <defs>
+            <linearGradient id="ogGoldAlg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#fbe6a8" />
+              <stop offset="32%" stop-color="#d9b35b" />
+              <stop offset="58%" stop-color="#8a611a" />
+              <stop offset="80%" stop-color="#e8c878" />
+              <stop offset="100%" stop-color="#7a5414" />
+            </linearGradient>
+            <linearGradient id="ogGoldBlg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#fff0bf" />
+              <stop offset="32%" stop-color="#e3c171" />
+              <stop offset="62%" stop-color="#7a5414" />
+              <stop offset="85%" stop-color="#eccd7c" />
+              <stop offset="100%" stop-color="#a87a23" />
+            </linearGradient>
+            <mask id="ogMaskOlg">
+              <rect width="100" height="64" fill="white" />
+              <circle cx="70" cy="32" r="24" fill="black" />
+              <circle cx="70" cy="32" r="15" fill="white" />
+            </mask>
+          </defs>
+          <g mask="url(#ogMaskOlg)">
+            <path fill="url(#ogGoldAlg)" fill-rule="evenodd"
+                  d="M 6 32 A 24 24 0 1 1 54 32 A 24 24 0 1 1 6 32 Z M 15 32 A 15 15 0 1 0 45 32 A 15 15 0 1 0 15 32 Z" />
+          </g>
+          <path fill="url(#ogGoldBlg)" fill-rule="evenodd"
+                d="M 46 32 A 24 24 0 1 1 94 32 A 24 24 0 1 1 46 32 Z M 55 32 A 15 15 0 1 0 85 32 A 15 15 0 1 0 55 32 Z" />
+          <path fill="url(#ogGoldBlg)" d="M 70 30 h 14 v 4 h -14 z M 80 30 h 4 v 12 h -4 z" />
         </svg>
       </span>
       <p class="foot-name">Omni Good Enterprise</p>
